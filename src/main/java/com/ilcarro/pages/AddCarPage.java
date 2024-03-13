@@ -19,7 +19,8 @@ public class AddCarPage extends BasePage {
 
     public AddCarPage enterLocation(String location) {
         type(pickUpPlace, location);
-        pickUpPlace.sendKeys(Keys.ARROW_DOWN);
+        pause(1000);
+        pickUpPlace.sendKeys(Keys.DOWN);
         pickUpPlace.sendKeys(Keys.ENTER);
         return this;
     }

@@ -37,6 +37,14 @@ public abstract class BasePage {
         }
     }
 
+    public void pause(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     public boolean isElementDisplayed(WebElement element) {
         return element.isDisplayed();
     }

@@ -43,7 +43,7 @@ public class HomePage extends BasePage {
 
     public HomePage clickOnOkButton() {
         click(okButton);
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+        pause(1000);
         return this;
     }
 

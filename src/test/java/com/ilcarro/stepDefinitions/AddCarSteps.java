@@ -34,7 +34,7 @@ public class AddCarSteps {
     public void enter_car_details() {
         new AddCarPage(driver).enterCarDetails(
                 new CarDetails("Germany", "Mercedes-Benz 200", "2017", "Petrol", "5",
-                        "E", "1256893235", "600"));
+                        "E", "12539GDS", "600"));
     }
 
     @And("User enters about info")
